@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foro Educativo Interactivo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Foro Educativo Interactivo</h1>
+  </header>
+  <main>
+    <section class="new-post">
+      <h2>Crear Nueva Publicación</h2>
+      <form id="postForm">
+        <label for="postTitle">Título:</label>
+        <input type="text" id="postTitle" placeholder="Título de tu tema" required>
+        
+        <label for="postContent">Contenido:</label>
+        <textarea id="postContent" placeholder="Escribe tu mensaje aquí..." required></textarea>
+        
+        <button type="submit">Publicar</button>
+      </form>
+    </section>
+    <section class="forum-section">
+      <h2>Publicaciones</h2>
+      <div id="forumPosts">
+        <!-- Las publicaciones dinámicas aparecerán aquí -->
+        <p id="noPostsMessage">No hay publicaciones. ¡Sé el primero en publicar algo!</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Foro Educativo Interactivo</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
